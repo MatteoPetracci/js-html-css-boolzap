@@ -14,12 +14,14 @@
   background-color: red;
   display: flex;
 }
+/*  Sezione left */
 
+/* Header sezione left */
 .left-item {
   width: 30%;
   background-color: pink;
 }
-.rigth-item {
+.right-item {
   width: 70%;
   background-color: green;
 }
@@ -37,7 +39,14 @@
   background-color: yellow;
 }
 
-.flex_item_hrigth {
+.flex_item_hright {
   width: 80%;
   background-color: blue;
 }
+
+ /* Contenitore notifiche */
+
+ .notification {
+   height: 80px;
+   background-color: darkgreen;
+ }
