@@ -33,7 +33,7 @@ i {
 /* Header sezione left */
 .left-item {
   width: 30%;
-  background-color: pink;
+  background-color: white;
 }
 .right-item {
   width: 70%;
@@ -150,7 +150,12 @@ i {
  /* Container chat  */
 
 .container_chat {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+}
+
+.text_chat p {
+  font-size: .8em;
+  margin-top: 5px;
 }
 
 .flex_list {
@@ -159,17 +164,21 @@ i {
   list-style: none;
  }
 .flex_list li {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
+  border-bottom: 1px solid lightgrey;
  }
 
 .img_chat {
   width: 20%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img_chat i {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .container_text {
@@ -177,13 +186,15 @@ i {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  justify-content: center;
+  /* border-bottom: 1px solid lightgrey; */
 }
 
 .name_chat {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .text_chat {
@@ -236,11 +247,11 @@ header {
   width: 100%;
   background-color: red;
   height: 60px;
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
 }
 
 .container_message {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: white;
   margin: 5px;
   width: 20%;
