@@ -145,10 +145,10 @@ header {
 /* Main sezione rigth */
 
 .main {
-  height: 70vh;
   background-color: orange;
   display: flex;
   flex-direction: column;
+  height: calc(100% - 120px);
 }
 
 .message {
@@ -168,4 +168,22 @@ header {
 #text_right {
   display: flex;
   justify-content: flex-end;
+}
+
+/* Footer sezione right*/
+
+.footer {
+  height: 60px;
+  background-color: yellow;
+  display: flex;
+}
+
+.box_emoji,
+.box_send {
+  width: 10%;
+  background-color: black;
+}
+
+.footer input {
+  width: 80%;
 }
