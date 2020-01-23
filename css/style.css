@@ -141,3 +141,31 @@ header {
 .list_icon li {
   padding: 0 10px;
 }
+
+/* Main sezione rigth */
+
+.main {
+  height: 70vh;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  width: 100%;
+  background-color: red;
+  height: 60px;
+  border: 2px solid grey;
+}
+
+.container_message {
+  border: 2px solid black;
+  background-color: white;
+  margin: 5px;
+  width: 20%;
+}
+
+#text_right {
+  display: flex;
+  justify-content: flex-end;
+}
