@@ -283,14 +283,35 @@ header {
   height: 60px;
   background-color: yellow;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.box_emoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_emoji i {
+  font-size: 1.5em;
 }
 
 .box_emoji,
 .box_send {
-  width: 10%;
-  background-color: black;
+  width: 8%;
+  /* background-color: black; */
 }
 
 .footer input {
-  width: 80%;
+  width: 84%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.footer input::placeholder {
+  padding-left: 15px;
+  font-size: 1.2em;
 }
