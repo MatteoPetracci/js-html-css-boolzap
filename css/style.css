@@ -23,3 +23,21 @@
   width: 70%;
   background-color: green;
 }
+
+.head_left {
+  display: flex;
+}
+
+.head_left {
+  height: 60px;
+}
+
+.flex_item_hleft {
+  width: 20%;
+  background-color: yellow;
+}
+
+.flex_item_hrigth {
+  width: 80%;
+  background-color: blue;
+}
