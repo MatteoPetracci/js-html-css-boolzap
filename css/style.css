@@ -71,6 +71,9 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
+  height: 60vh;
+  overflow: hidden;
+  overflow: scroll;
  }
 .flex_list li {
   border: 2px solid black;
@@ -90,6 +93,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .name_chat {
@@ -118,4 +122,8 @@ header {
 .flex_item_header_rigth {
   width: 70%;
   background-color: blue;
+}
+
+.container_text_rigth {
+  display: flex;
 }
