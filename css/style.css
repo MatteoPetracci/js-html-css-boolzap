@@ -50,3 +50,9 @@
    height: 80px;
    background-color: darkgreen;
  }
+
+/* Div search */
+
+.search input {
+  width: 90%;
+}
