@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
@@ -55,4 +59,48 @@
 
 .search input {
   width: 90%;
+}
+
+ /* Container chat  */
+
+.container_chat {
+  border: 2px solid black;
+
+}
+
+.flex_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+ }
+.flex_list li {
+  border: 2px solid black;
+  display: flex;
+ }
+
+.img_chat {
+  width: 20%;
+  padding: 10px;
+}
+
+.img_chat i {
+  font-size: 2em;
+}
+
+.container_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name_chat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.text_chat {
+  display: flex;
+  flex-direction: column;
 }
