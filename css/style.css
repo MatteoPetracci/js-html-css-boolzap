@@ -15,6 +15,7 @@ i {
   color: #80868A;
 }
 
+
 .green {
   height: 200px;
   position: fixed;
@@ -46,6 +47,7 @@ i {
 .left-item {
   width: 30%;
   background-color: white;
+  overflow: hidden;
 }
 .right-item {
   width: 70%;
@@ -103,6 +105,7 @@ i {
   background-color: white;
   border-radius: 50%;
   padding: 15px;
+  width: 53px;
 }
 
 .text_icon_bell {
@@ -111,10 +114,6 @@ i {
   justify-content: center;
   width: 80%;
   line-height: 22px;
-}
-
-.text_icon_bell a,
-.text_icon_bell p {
 }
 
 .text_icon_bell a {
@@ -157,7 +156,8 @@ i {
  /* Container chat  */
 
 .container_chat {
-  /* border: 2px solid black; */
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .text_chat p {
@@ -169,7 +169,18 @@ i {
   display: flex;
   flex-direction: column;
   list-style: none;
- }
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+  margin-top: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 2px solid slategrey;
+}
+
 .flex_list li {
   display: flex;
   border-bottom: 1px solid lightgrey;
@@ -249,33 +260,33 @@ header {
   flex-direction: column;
   height: calc(100% - 120px);
   background-image: url(../img/mine.jpg);
+  overflow-y: scroll;
 }
 
-.message {
-  height: 60px;
-  padding-left: 40px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-.container_message {
-  background-color: white;
-  margin: 5px;
-  width: 30%;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-#text_right {
+.box_text_user {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
-  height: 60px;
+  padding-right: 50px;
+  margin-top: 20px;
 }
 
-#bg_text {
-  background-color: #dcf8c6;
+.text_user {
+  background-color: #D5F9BA;
+  border-radius: 10px;
+  width: 30%;
+  padding: 15px;
 }
+
+.box_text_receive {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+
 
 /* Footer sezione right*/
 
@@ -301,7 +312,6 @@ header {
 .box_emoji,
 .box_send {
   width: 8%;
-  /* background-color: black; */
 }
 
 .footer input {
@@ -314,4 +324,8 @@ header {
 .footer input::placeholder {
   padding-left: 15px;
   font-size: 1.2em;
+}
+
+.fa-paper-plane:hover {
+  cursor: pointer;
 }
