@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 90%;
+  height: 90vh;
+  background-color: red;
+  display: flex;
+}
+
+.left-item {
+  width: 30%;
+  background-color: pink;
+}
+.rigth-item {
+  width: 70%;
+  background-color: green;
+}
