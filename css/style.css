@@ -48,7 +48,6 @@ i {
 }
 .right-item {
   width: 70%;
-  background-color: green;
 }
 
 .head_left {
@@ -99,7 +98,7 @@ i {
 }
 
 .icon_bell i {
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: white;
   border-radius: 50%;
   padding: 15px;
@@ -189,7 +188,7 @@ i {
 }
 
 .img_chat i {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .container_text {
@@ -206,6 +205,10 @@ i {
   display: flex;
   justify-content: space-between;
   /* border: 2px solid black; */
+}
+
+.name_chat span {
+  font-size: .75em;
 }
 
 .text_chat {
@@ -248,7 +251,6 @@ header {
 /* Main sezione rigth */
 
 .main {
-  background-color: orange;
   display: flex;
   flex-direction: column;
   height: calc(100% - 120px);
