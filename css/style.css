@@ -289,8 +289,6 @@ header {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
   height: calc(100% - 120px);
   background-image: url(../img/mine.jpg);
   overflow-y: scroll;
@@ -300,7 +298,7 @@ header {
   max-width: 30%;
   min-width: 25%;
   padding: 10px;
-  margin: 15px 45px;;
+  margin: 10px 45px;;
   border-radius: 5px;
 }
 
@@ -316,6 +314,7 @@ header {
 .receive {
   background-color: white;
   float: left;
+  clear: both;
 }
 
 .text_top i {
@@ -325,6 +324,7 @@ header {
 .sent {
   background-color: #dcf8c6;
   float: right;
+  clear: both;
 }
 
 
