@@ -36,7 +36,7 @@ function textSend() {
     textHidden.addClass('sent');
     textHidden.find('.text').text(text);
     $('.main').append(textHidden);
-    // annullare
+    // annullare il valore inserito nel campo input
     $('.send').val('');
 
 // creare delle variabile per prendere l'ora e i minuti correnti
@@ -61,3 +61,11 @@ function zero(num) {
   }
   return num;
 }
+
+
+
+ //  cliccando sull'icona search prendo il valore dell'input con id contact
+$('.search i').click(function() {
+  var contact = $('#contact').val();
+  console.log(contact);
+})
