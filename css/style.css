@@ -282,6 +282,12 @@ header {
 
 /* Main sezione rigth */
 
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -290,27 +296,35 @@ header {
   overflow-y: scroll;
 }
 
-.box_text_user {
+.box_text {
+  max-width: 30%;
+  min-width: 25%;
+  padding: 10px;
+  margin: 15px 45px;;
+  border-radius: 5px;
+}
+
+.text_top {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
-  margin-top: 20px;
+  justify-content: space-between;
 }
 
-.text_user {
-  background-color: #D5F9BA;
-  border-radius: 10px;
-  width: 30%;
-  padding: 15px;
+.text_bottom {
+  text-align: right;
 }
 
-.box_text_receive {
+.receive {
   background-color: white;
-  border-radius: 10px;
-  width: 30%;
-  margin-left: 50px;
-  margin-top: 20px;
-  padding: 15px;
+  float: left;
+}
+
+.text_top i {
+  display: none;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  float: right;
 }
 
 

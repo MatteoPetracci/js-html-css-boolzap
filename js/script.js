@@ -8,17 +8,35 @@
 
 // Nel container generale main uso append per inserire il contenuto di textHidden.
 
-$(document).ready(function () {
-  var textUser = $('box_text_user');
-  $(".fa-paper-plane").click(function () {
-    var text = $("#send").val();
-    console.log(text);
-    var textHidden = $("#text_hidden").clone();
-    console.log(textHidden);
-    textHidden.find("p").text(text);
-    $(".main").append(textHidden);
-    if (text === "") {
-      alert('prova')
-    }
-  });
+// $(document).ready(function () {
+//   var textUser = $('box_text_user');
+//   $(".fa-paper-plane").click(function () {
+//     var text = $("#send").val();
+//     console.log(text);
+//     var textHidden = $("#text_hidden").clone();
+//     console.log(textHidden);
+//     textHidden.find("p").text(text);
+//     $(".main").append(textHidden);
+//     if (text === "") {
+//       alert('prova')
+//     }
+//   });
+// });
+
+$(document).ready(function (){
+$('.fa-paper-plane').click(function() {
+  textSend();
+})
+
+
 });
+
+
+function textSend() {
+  var text = $('.send').val();
+  console.log(text);
+  if (text.length != 0) {
+    var textHidden = $('.template').clone();
+    console.log(textHidden);
+  }
+}
