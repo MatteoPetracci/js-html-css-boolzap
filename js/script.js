@@ -6,7 +6,7 @@ $('.fa-paper-plane').click(function() {
 // con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
 
  // Come secondo argomento passo il tempo che deve passare in questo caso 2.5s
-  
+
   setTimeout(function () {
     var received = $('.template .box_text').clone();
     received.addClass('receive');
@@ -53,7 +53,7 @@ function textSend() {
 
 function zero(num) {
   if (num < 10) {
-    numbero += 0;
+    num += 0;
   }
   return num;
 }
