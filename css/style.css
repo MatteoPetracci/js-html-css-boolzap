@@ -11,6 +11,15 @@ body {
   z-index: -2;
 }
 
+input {
+  outline: none;
+  padding: 0 20px;
+}
+
+small {
+  font-size: .6em;
+}
+
 i {
   color: #80868A;
 }
@@ -94,18 +103,18 @@ img {
 
  /* Contenitore notifiche */
 
- .notification {
-   height: 80px;
-   background-color: #9de1fe;
-   display: flex;
- }
+.notification {
+  height: 80px;
+  background-color: #9de1fe;
+  display: flex;
+}
 
- .notification span i {
-   border-radius: 50%;
-   background-color: white;
-   padding: 15px;
-   font-size: 1.5em;
- }
+.notification span i {
+  border-radius: 50%;
+  background-color: white;
+  padding: 15px;
+  font-size: 1.5em;
+}
 
 .icon_bell {
   width: 20%;
@@ -163,7 +172,7 @@ img {
   width: 0px;
   line-height: 27px;
   position: relative;
-  left: 20px;
+  left: 15px;
   padding-left: 15px;
 }
 
@@ -171,10 +180,8 @@ img {
   text-align: center;
 }
 
-input:hover {
-  border: 2px solid lightblue;
-  transition: .8s;
-  outline: none;
+.search input {
+  padding-left: 30px;
 }
 
  /* Container chat  */
@@ -185,7 +192,7 @@ input:hover {
 }
 
 .text_chat p {
-  font-size: .8em;
+  font-size: .7em;
   margin-top: 5px;
 }
 
