@@ -15,6 +15,10 @@ i {
   color: #80868A;
 }
 
+img {
+  width: 100%;
+  border-radius: 50%;
+}
 
 .green {
   height: 200px;
@@ -56,6 +60,7 @@ i {
 .head_left {
   display: flex;
   line-height: 60px;
+  background-color: #ededed;
 }
 
 .head_left {
@@ -76,6 +81,11 @@ i {
 }
 .flex_item_hleft i {
   font-size: 2em;
+}
+
+.flex_item_hleft img {
+  padding: 10px;
+  margin-left: 12px;
 }
 
  /* Contenitore notifiche */
@@ -122,6 +132,10 @@ i {
   font-size: .85em;
 }
 
+.icon_bell i {
+ color: #9de1fe;
+}
+
 /* Div search */
 
 .search {
@@ -153,6 +167,12 @@ i {
   text-align: center;
 }
 
+input:hover {
+  border: 2px solid lightblue;
+  transition: .8s;
+  outline: none;
+}
+
  /* Container chat  */
 
 .container_chat {
@@ -181,10 +201,17 @@ i {
   outline: 2px solid slategrey;
 }
 
+
 .flex_list li {
   display: flex;
   border-bottom: 1px solid lightgrey;
  }
+
+.flex_list li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: .5s;
+}
 
 .img_chat {
   width: 20%;
