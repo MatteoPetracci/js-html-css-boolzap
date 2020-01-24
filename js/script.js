@@ -1,42 +1,30 @@
-// facciamo click sull'icona del tasto invio, creo una variabile dove salvare quello che l'utente inserisce grazie a val() senza passare nessun valore
-
-// Con clone() clono l'elemento identificato con l'id #text_hidden e lo salvo in una variabile
-
-// Con find sull'elemento clonato e passando come valore p selezioniamo tutti i paragrafi che sono discendenti
-
-// su text invece inserisco la variabile che contiene il contenuto di quello che ha scritto l'utente
-
-// Nel container generale main uso append per inserire il contenuto di textHidden.
-
-// $(document).ready(function () {
-//   var textUser = $('box_text_user');
-//   $(".fa-paper-plane").click(function () {
-//     var text = $("#send").val();
-//     console.log(text);
-//     var textHidden = $("#text_hidden").clone();
-//     console.log(textHidden);
-//     textHidden.find("p").text(text);
-//     $(".main").append(textHidden);
-//     if (text === "") {
-//       alert('prova')
-//     }
-//   });
-// });
+//  al click sull'icona invio  facciamo partire la funzione textsend()
 
 $(document).ready(function (){
 $('.fa-paper-plane').click(function() {
   textSend();
-})
-
+});
 
 });
 
+// Dentro una variabile prendiamo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
+
+// Inserire in una variabile il clone di box_text che contiente la struttura del messaggio creato
+
+// Aggiungiamo la classe sent per far si che appaia a destra fra i messaggi inviati
+
+// con find() cerchiamo fra i suoi discendenti la classe text che è addociato a il tag p e modifichiamo il valore interno con text() andando a inserire la variabile che contiene il messaggio creato dall'utente nell'input
+
+// con append aggiungiamo al main la variabile con all'interno quello che abbiamo clonato
 
 function textSend() {
   var text = $('.send').val();
   console.log(text);
   if (text.length != 0) {
-    var textHidden = $('.template').clone();
+    var textHidden = $('.template .box_text').clone();
     console.log(textHidden);
+    textHidden.addClass('sent');
+    textHidden.find('.text').text(text);
+    $('.main').append(textHidden);
   }
 }

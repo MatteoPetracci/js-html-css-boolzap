@@ -20,6 +20,10 @@ img {
   border-radius: 50%;
 }
 
+.template {
+  display: none;
+}
+
 .green {
   height: 200px;
   position: fixed;
@@ -326,8 +330,6 @@ header {
   float: right;
   clear: both;
 }
-
-
 
 /* Footer sezione right*/
 
