@@ -3,6 +3,16 @@
 $(document).ready(function (){
 $('.fa-paper-plane').click(function() {
   textSend();
+// con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
+
+ // Come secondo argomento passo il tempo che deve passare in questo caso 2.5s
+  
+  setTimeout(function () {
+    var received = $('.template .box_text').clone();
+    received.addClass('receive');
+    received.find('.text').text("Va bene, grazie.");
+    $('.main').append(received);
+  }, 2500);
 });
 
 });
@@ -26,5 +36,24 @@ function textSend() {
     textHidden.addClass('sent');
     textHidden.find('.text').text(text);
     $('.main').append(textHidden);
+
+// creare delle variabile per prendere l'ora e i minuti correnti
+    var date = new Date();
+    console.log(date);
+    var hour = date.getHours();
+    console.log(hour);
+    var minute = zero(date.getMinutes());
+    console.log(minute);
+    textHidden.find('.time').text(hour + ':' + minute);
+
   }
+}
+
+// Creare funzioni che aggiungo lo 0 ai minuti fino a 09
+
+function zero(num) {
+  if (num < 10) {
+    numbero += 0;
+  }
+  return num;
 }
