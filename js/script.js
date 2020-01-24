@@ -1,4 +1,4 @@
-//  al click sull'icona invio  facciamo partire la funzione textsend()
+//  al click sull'icona invio  faccio partire la funzione textsend()
 
 $(document).ready(function (){
 $('.fa-paper-plane').click(function() {
@@ -17,15 +17,15 @@ $('.fa-paper-plane').click(function() {
 
 });
 
-// Dentro una variabile prendiamo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
+// Dentro una variabile prendo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
 
 // Inserire in una variabile il clone di box_text che contiente la struttura del messaggio creato
 
 // Aggiungiamo la classe sent per far si che appaia a destra fra i messaggi inviati
 
-// con find() cerchiamo fra i suoi discendenti la classe text che è addociato a il tag p e modifichiamo il valore interno con text() andando a inserire la variabile che contiene il messaggio creato dall'utente nell'input
+// con find() cerco fra i suoi discendenti la classe text che è addociato a il tag p e modifico il valore interno con text() andando a inserire la variabile che contiene il messaggio creato dall'utente nell'input
 
-// con append aggiungiamo al main la variabile con all'interno quello che abbiamo clonato
+// con append aggiungo al main la variabile con all'interno quello che ho clonato
 
 function textSend() {
   var text = $('.send').val();
@@ -36,6 +36,8 @@ function textSend() {
     textHidden.addClass('sent');
     textHidden.find('.text').text(text);
     $('.main').append(textHidden);
+    // annullare
+    $('.send').val('');
 
 // creare delle variabile per prendere l'ora e i minuti correnti
     var date = new Date();
@@ -45,6 +47,8 @@ function textSend() {
     var minute = zero(date.getMinutes());
     console.log(minute);
     textHidden.find('.time').text(hour + ':' + minute);
+
+
 
   }
 }
