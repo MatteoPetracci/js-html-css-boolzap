@@ -64,8 +64,22 @@ function zero(num) {
 
 
 
- //  cliccando sull'icona search prendo il valore dell'input con id contact
-$('.search i').click(function() {
-  var contact = $('#contact').val();
+ //  clicco sull'input che ha  id contact in una variabile  prendo il valore di quello che l'utente inserisce nell'input
+$('#contact').click(function() {
+  var contact = $(this).val();
   console.log(contact);
-})
+  // uso  Each  negli <li> della lista  come se fosse un ciclo for su tutti gli h4
+$('.flex_list li').each(function() {
+  // in una variabile prendo il valore di tutti gli h4 find() e li trasformo in lettere minuscole
+  var nameFriend = $(this).find('h4').text().toLowerCase();
+  console.log(nameFriend);
+  //  creo la condizione e controllo se negli h4 che contengono il nome di un utente sono incluse le lettere inserite nell'input
+
+  // se la condizione è vera mostro il nome altrimenti nascondo 
+  if (nameFriend.includes(contact)) {
+    $(this).fadeIn();
+  } else {
+    $(this).fadeOut();
+  }
+});
+});
