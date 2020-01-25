@@ -57,15 +57,17 @@ function textSend() {
 
 function zero(num) {
   if (num < 10) {
-    num += 0;
+    num += "0";
   }
   return num;
 }
 
 
 
- //  clicco sull'input che ha  id contact in una variabile  prendo il valore di quello che l'utente inserisce nell'input
-$('#contact').click(function() {
+ // uso keydown() che ha  id contact
+
+ // in una variabile  prendo il valore di quello che l'utente inserisce nell'input
+$('#contact').keydown(function() {
   var contact = $(this).val();
   console.log(contact);
   // uso  Each  negli <li> della lista  come se fosse un ciclo for su tutti gli h4
@@ -75,7 +77,7 @@ $('.flex_list li').each(function() {
   console.log(nameFriend);
   //  creo la condizione e controllo se negli h4 che contengono il nome di un utente sono incluse le lettere inserite nell'input
 
-  // se la condizione è vera mostro il nome altrimenti nascondo 
+  // se la condizione è vera mostro il nome altrimenti nascondo
   if (nameFriend.includes(contact)) {
     $(this).fadeIn();
   } else {

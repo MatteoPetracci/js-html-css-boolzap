@@ -16,12 +16,20 @@ input {
   padding: 0 20px;
 }
 
+h4 {
+  font-weight: normal;
+}
+
 small {
-  font-size: .6em;
+  font-size: .7em;
 }
 
 i {
-  color: #80868A;
+  color: #949494;
+}
+
+i:hover {
+  cursor: pointer;
 }
 
 img {
@@ -30,6 +38,10 @@ img {
 }
 
 .template {
+  display: none;
+}
+
+.none {
   display: none;
 }
 
@@ -104,9 +116,13 @@ img {
  /* Contenitore notifiche */
 
 .notification {
+  display: flex;
   height: 80px;
   background-color: #9de1fe;
-  display: flex;
+}
+
+.notification:hover {
+  cursor: pointer;
 }
 
 .notification span i {
@@ -139,11 +155,22 @@ img {
   line-height: 22px;
 }
 
+.text_icon_bell p {
+  font-size: .9em;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .6px;
+}
+
 .text_icon_bell a {
   color: #404b4f;
-  font-weight: bold;
   font-size: .85em;
+  text-decoration: none;
 }
+.text_icon_bell a:hover {
+  text-decoration: underline;
+}
+
 
 .icon_bell i {
  color: #9de1fe;
@@ -172,16 +199,16 @@ img {
   width: 0px;
   line-height: 27px;
   position: relative;
-  left: 15px;
+  left: 17px;
   padding-left: 15px;
 }
 
 .search input::placeholder {
-  text-align: center;
+  color:#B7B7B7;
 }
 
 .search input {
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
  /* Container chat  */
@@ -189,11 +216,13 @@ img {
 .container_chat {
   overflow-y: scroll;
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 .text_chat p {
-  font-size: .7em;
+  font-size: .83em;
   margin-top: 5px;
+  color: #7F7F7F;
 }
 
 .flex_list {
@@ -203,15 +232,11 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 0.4em;
-  margin-top: 50px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 2px solid slategrey;
+  background-color: rgba(0,0,0,.2);
 }
-
 
 .flex_list li {
   display: flex;
@@ -259,11 +284,21 @@ img {
   flex-direction: column;
 }
 
+.text_chat small {
+  color: #949494;
+  font-size: .75em;
+}
+
+.name_chat small {
+  color: #7F7F7F;
+}
+
 /* Sezione right */
 
 header {
   display: flex;
   height: 60px;
+  font-family: 'Lato', sans-serif;
 }
 
 .flex_item_header_left {
@@ -309,8 +344,9 @@ header {
   max-width: 30%;
   min-width: 25%;
   padding: 10px;
-  margin: 10px 45px;;
+  margin: 10px 45px;
   border-radius: 5px;
+  box-shadow: 0 .8px 0.5px rgba(0,0,0,.20);
 }
 
 .text_top {
@@ -372,10 +408,14 @@ header {
 }
 
 .footer input::placeholder {
-  padding-left: 15px;
   font-size: 1.2em;
+  color:#B7B7B7;
 }
 
 .fa-paper-plane:hover {
   cursor: pointer;
+}
+
+.footer .send:active .fa-microphone {
+  display: none;
 }
