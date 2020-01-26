@@ -73,6 +73,7 @@ function zero(num) {
 $('#contact').keyup(function() {
   var contact = $(this).val();
   console.log(contact);
+
   // uso  Each  negli <li> della lista  come se fosse un ciclo for su tutti gli h4
 $('.flex_list li').each(function() {
   // in una variabile prendo il valore di tutti gli h4 find() e li trasformo in lettere minuscole
@@ -82,9 +83,10 @@ $('.flex_list li').each(function() {
 
   // se la condizione è vera mostro il nome altrimenti nascondo
   if (nameFriend.includes(contact)) {
-    $(this).fadeIn();
+    $(this).show();
   } else {
-    $(this).fadeOut();
+    $(this).hide();
   }
+
 });
 });
