@@ -6,7 +6,6 @@ $('.fa-paper-plane').click(function() {
   textSend();
 });
 
-// con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
 
 $('.send').keyup(function () {
   if (event.which == 13) {
@@ -46,13 +45,16 @@ function textSend() {
     var minute = zero(date.getMinutes());
     console.log(minute);
     textHidden.find('.time').text(hour + ':' + minute);
-    // Come secondo argomento passo il tempo che deve passare in questo caso 2.5s
+
+// con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
+
    setTimeout(function () {
      var received = $('.template .box_text').clone();
      received.addClass('receive');
      received.find('.text').text("Va bene, grazie.");
      $('.main').append(received);
    }, 2500);
+   // Come secondo argomento passo il tempo che deve passare in questo caso 2.5s
 
   }
 }
