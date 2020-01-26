@@ -372,7 +372,12 @@ header {
 }
 
 .text_top i {
-  display: none;
+  opacity: 0;
+}
+
+.text_top i:hover {
+  opacity: 1;
+  transition: .3s;
 }
 
 .sent {
