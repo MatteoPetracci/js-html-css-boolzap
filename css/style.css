@@ -294,12 +294,18 @@ img {
   color: #7F7F7F;
 }
 
+.text_chat span {
+  font-size: 1.3em;
+  padding-left: 3px;
+}
+
 /* Sezione right */
 
 header {
   display: flex;
   height: 60px;
   font-family: 'Lato', sans-serif;
+  background-color: #ededed;
 }
 
 .flex_item_header_left {
@@ -346,7 +352,6 @@ header {
   min-width: 25%;
   padding: 10px;
   margin: 10px 45px;
-  border-radius: 5px;
   box-shadow: 0 .8px 0.5px rgba(0,0,0,.20);
 }
 
@@ -363,6 +368,7 @@ header {
   background-color: white;
   float: left;
   clear: both;
+  border-radius: 0px 15px 15px 15px;
 }
 
 .text_top i {
@@ -370,10 +376,12 @@ header {
 }
 
 .sent {
+  border-radius: 15px 0px 15px 15px;
   background-color: #dcf8c6;
   float: right;
   clear: both;
 }
+
 
 /* Footer sezione right*/
 
