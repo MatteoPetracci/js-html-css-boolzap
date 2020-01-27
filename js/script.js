@@ -21,7 +21,7 @@ $('.send').keyup(function () {
 
 // Aggiungiamo la classe sent per far si che appaia a destra fra i messaggi inviati
 
-// con find() cerco fra i suoi discendenti la classe text che è addociato a il tag p e modifico il valore interno con text() andando a inserire la variabile che contiene il messaggio creato dall'utente nell'input
+// con find() cerco fra i suoi discendenti la classe text che è associato a il tag p e modifico il valore interno con text() andando a inserire la variabile che contiene il messaggio creato dall'utente nell'input
 
 // con append aggiungo al main la variabile con all'interno quello che ho clonato
 
@@ -53,8 +53,8 @@ function textSend() {
       received.addClass('receive');
       received.find('.text').text("Va bene, grazie.");
       $('.main').append(received);
-    }, 2500);
-// Come secondo argomento passo il tempo che deve passare in questo caso 2.5s
+    }, 1500);
+// Come secondo argomento passo il tempo che deve passare in questo caso 1.5s
   }
 }
 
