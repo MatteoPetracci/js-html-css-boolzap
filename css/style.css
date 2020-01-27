@@ -360,6 +360,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: relative;
+  cursor: pointer;
 }
 
 .text_bottom {
@@ -377,7 +378,7 @@ header {
   opacity: 0;
 }
 
-.text_top i:hover {
+.text_top:hover i {
   opacity: 1;
   transition: .3s;
 }
@@ -451,9 +452,18 @@ header {
   position: absolute;
   top: 15px;
   right: 0;
-  padding: 10px;
+  margin: 10px;
   background-color: white;
   box-shadow: 0px 1px 3px #000000;
   line-height: 30px;
   display: none;
+}
+
+.dropdown li {
+  padding: 10px;
+}
+
+.dropdown li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
 }
