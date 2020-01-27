@@ -22,6 +22,20 @@ $(document).on('click', '.delete', function() {
 });
 
 
+$(document).on('click','ul.flex_list li', function() {
+  $(this).removeClass('active');
+  $(this).addClass('active');
+  $(this).prependTo($('.flex_list'));
+  var data = $(this).attr('data');
+  $('.wrapper_text').removeClass('block');
+  $('.wrapper_text').each(function() {
+      if ($(this).attr('data') == data) {
+        $(this).addClass('block');
+        $(this).addClass('none');
+      }
+  });
+})
+
 });
 
 // Dentro una variabile prendo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
@@ -75,6 +89,7 @@ function zero(num) {
   }
   return num;
 }
+
 
  // uso keyup() su id contact
 

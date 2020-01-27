@@ -472,3 +472,15 @@ header {
 .container_text_right.active {
   display: flex;
 }
+
+.block {
+  display: block;
+}
+
+.active {
+  display: block;
+}
+
+/* ul.flex_list li.active {
+  display: block;
+} */
