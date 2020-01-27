@@ -23,9 +23,6 @@ $(document).on('click', '.delete', function() {
 
 
 $(document).on('click','ul.flex_list li', function() {
-  $(this).removeClass('active');
-  $(this).addClass('active');
-  $(this).prependTo($('.flex_list'));
   var data = $(this).attr('data');
   $('.wrapper_text').removeClass('block');
   $('.wrapper_text').each(function() {
