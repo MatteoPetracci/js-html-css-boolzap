@@ -319,8 +319,8 @@ header {
   line-height: 60px;
 }
 
-.container_text_rigth {
-  display: flex;
+.container_text_right {
+  display: none;
 }
 
 .list_icon {
@@ -465,4 +465,10 @@ header {
 .dropdown li:hover {
   background-color: #f5f5f5;
   cursor: pointer;
+}
+
+/* Collegare chat */
+
+.container_text_right.active {
+  display: flex;
 }

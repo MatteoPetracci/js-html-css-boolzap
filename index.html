@@ -59,11 +59,11 @@
       <!-- Container chat -->
       <div class="container_chat">
         <ul class="flex_list">
-          <li>
+          <li data="1"  class="active">
             <div class="img_chat">
               <img src="img/avatar_1.jpg" alt="">
             </div>
-            <div class="container_text" data="1">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Matteo R.</h4>
                 <small>20:58</small>
@@ -73,11 +73,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="2">
             <div class="img_chat">
               <img src="img/avatar_2.jpg" alt="img user">
             </div>
-            <div class="container_text" data="2">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Luca</h4>
                 <small>20:05</small>
@@ -87,11 +87,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="3">
             <div class="img_chat">
               <img src="img/avatar_3.jpg" alt="img user">
             </div>
-            <div class="container_text" data="3">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Alessandro</h4>
                 <small>18:20</small>
@@ -101,11 +101,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li  data="4">
             <div class="img_chat">
               <img src="img/avatar_4.jpg" alt="img user">
             </div>
-            <div class="container_text" data="4">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Federico</h4>
                 <small>15:30</small>
@@ -115,11 +115,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="5">
             <div class="img_chat">
               <img src="img/avatar_5.jpg" alt="img user">
             </div>
-            <div class="container_text" data="5">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>William G.</h4>
                 <small>14:01</small>
@@ -129,11 +129,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="6">
             <div class="img_chat">
               <img src="img/avatar_6.jpg" alt="img user">
             </div>
-            <div class="container_text" data="6">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Chiara</h4>
                 <small>12:27</small>
@@ -143,11 +143,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="7">
             <div class="img_chat">
               <img src="img/avatar_7.jpg" alt="img user">
             </div>
-            <div class="container_text" data="7">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Andrea</h4>
                 <small>Ieri</small>
@@ -157,11 +157,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="8">
             <div class="img_chat">
               <img src="img/avatar_8.jpg" alt="img user">
             </div>
-            <div class="container_text" data="8">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Riccardo L.</h4>
                 <small>Martedì</small>
@@ -171,11 +171,11 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data="9">
             <div class="img_chat">
               <img src="img/avatar_9.jpg" alt="img user">
             </div>
-            <div class="container_text" data="9">
+            <div class="container_text">
               <div class="name_chat">
                 <h4>Giulia</h4>
                 <small>Martedì</small>
@@ -208,13 +208,39 @@
       <!-- Heder -->
       <header>
         <div class="flex_item_header_left">
-          <div class="container_text_rigth">
+          <div class="container_text_right active" data='1'>
             <div class="img_chat">
               <img src="img/avatar_1.jpg" alt="">
             </div>
             <div class="container_text">
               <div class="name_chat">
-                <h4>Francesco</h4>
+                <h4>Matteo R.</h4>
+              </div>
+              <div class="text_chat">
+                <small>Ultimo accesso oggi alle 15:40</small>
+              </div>
+            </div>
+          </div>
+          <div class="container_text_right" data='2'>
+            <div class="img_chat">
+              <img src="img/avatar_1.jpg" alt="">
+            </div>
+            <div class="container_text">
+              <div class="name_chat">
+                <h4>Luca</h4>
+              </div>
+              <div class="text_chat">
+                <small>Ultimo accesso oggi alle 15:40</small>
+              </div>
+            </div>
+          </div>
+          <div class="container_text_right" data='3'>
+            <div class="img_chat">
+              <img src="img/avatar_1.jpg" alt="">
+            </div>
+            <div class="container_text">
+              <div class="name_chat">
+                <h4>Luca</h4>
               </div>
               <div class="text_chat">
                 <small>Ultimo accesso oggi alle 15:40</small>
@@ -239,6 +265,7 @@
       <!-- Heder -->
        <!-- Main sezione rigth  -->
       <section class="main clear">
+      <div class="wrapper_text active">
         <div class="box_text sent">
           <div class="text_top">
             <p class="text">Lorem ipsum dolor sit.</p>
@@ -257,6 +284,27 @@
             <small class="time">11:52</small>
           </div>
         </div>
+      </div>
+      <div class="wrapper_text none">
+        <div class="box_text sent">
+          <div class="text_top">
+            <p class="text">Lorem ipsum dolor sit.</p>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="text_bottom">
+            <small class="time">10:21</small>
+          </div>
+        </div>
+        <div class="box_text receive">
+          <div class="text_top">
+            <p class="text">Lorem ipsum dolor sit.</p>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="text_bottom">
+            <small class="time">11:52</small>
+          </div>
+        </div>
+      </div>
         <div class="template">
           <div class="box_text">
             <div class="text_top relative">

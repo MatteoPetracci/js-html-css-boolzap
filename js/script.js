@@ -21,12 +21,6 @@ $(document).on('click', '.delete', function() {
   $(this).parents('.box_text').remove();
 });
 
-$(document).on('click', 'ul.flex_list li', function() {
-  var data = $('.container_text').attr('data');
-  console.log(data);
-  
-});
-
 
 });
 
