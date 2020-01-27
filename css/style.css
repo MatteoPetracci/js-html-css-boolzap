@@ -32,6 +32,10 @@ i:hover {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   width: 100%;
   border-radius: 50%;
@@ -439,7 +443,7 @@ header {
   position: relative;
 }
 
-.active {
+.dropdown.active {
   display: block;
 }
 

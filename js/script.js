@@ -13,9 +13,15 @@ $('.send').keyup(function () {
   }
 });
 
-$('.fa-angle-down').click(function() {
-  $(this).next('.dropdown').addClass('.active');
-});
+$(document).on('click', '.fa-angle-down', function() {
+  $(this).next('.dropdown').toggleClass('active');
+}
+
+)
+
+// $('.fa-angle-down').click(function() {
+  // $(this).next('.dropdown').addClass('active');
+// });
 
 });
 
