@@ -13,6 +13,10 @@ $('.send').keyup(function () {
   }
 });
 
+$('.fa-angle-down').click(function() {
+  $(this).next('.dropdown').addClass('.active');
+});
+
 });
 
 // Dentro una variabile prendo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
@@ -62,7 +66,7 @@ function textSend() {
 
 function zero(num) {
   if (num < 10) {
-    num += "0";
+    num = "0" + num;
   }
   return num;
 }

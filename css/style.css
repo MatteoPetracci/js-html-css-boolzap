@@ -38,7 +38,7 @@ img {
 }
 
 .template {
-  /* display: none; */
+  display: none;
 }
 
 .none {
@@ -355,6 +355,7 @@ header {
 .text_top {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .text_bottom {
@@ -434,22 +435,21 @@ header {
 
 /* delete message */
 
-.box_message {
-  position: absolute;
-  list-style: none;
-  background-color: white;
-  padding: 15px;
-  width: 180px;
-  right: 0px;
-  box-shadow: 1px 1px 5px #303030;
-}
-
-.box_message li {
-  padding: 5px;
-}
-
-.position_rel {
+.relative {
   position: relative;
-  list-style: none;
-  width: 40%;
+}
+
+.active {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 3px #000000;
+  line-height: 30px;
+  display: none;
 }

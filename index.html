@@ -259,17 +259,15 @@
         </div>
         <div class="template">
           <div class="box_text">
-            <div class="text_top">
+            <div class="text_top relative">
               <p class="text">Lorem ipsum dolor sit.</p>
-              <ul>
-                <li class="position_rel">
-                  <i class="fas fa-angle-down"></i>
-                  <ul class="box_message">
-                    <li>Info messaggio</li>
-                    <li>Cancella messaggio</li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="parent_dropdown">
+                <a class="arrow" href=""><i class="fas fa-angle-down"></i></a>
+                <div class="dropdown">
+                  <h4>Info messaggio</h4>
+                  <h4>Elimina messaggio</h4>
+                </div>
+              </div>
             </div>
             <div class="text_bottom">
               <small class="time">11:21</small>
@@ -294,3 +292,12 @@
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
+
+
+
+
+
+<!-- <ul class="box_message drop_hidden">
+<li>Info messaggio</li>
+<li>Cancella messaggio</li>
+</ul> -->
