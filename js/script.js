@@ -21,6 +21,13 @@ $(document).on('click', '.delete', function() {
   $(this).parents('.box_text').remove();
 });
 
+$(document).on('click', 'ul.flex_list li', function() {
+  var data = $('.container_text').attr('data');
+  console.log(data);
+  
+});
+
+
 });
 
 // Dentro una variabile prendo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
