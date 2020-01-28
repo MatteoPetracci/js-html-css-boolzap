@@ -99,13 +99,13 @@ setTimeout(function() {
     var minute = zero(date.getMinutes());
     // console.log(minute);
     received.find('.time').text(hour + ':' + minute);
+    $('.flex_item_header_left small').text('Ultimo accesso oggi alle 15:40')
   }, 1500);
-
-  clearTimeout(setTimeout());
 }, 900)
 // Come secondo argomento passo il tempo che deve passare in questo caso 1.5s
   }
 }
+// clearTimeout(setTimeout());
 
 // Creare funzioni che aggiungo lo 0 ai minuti fino a 09
 
