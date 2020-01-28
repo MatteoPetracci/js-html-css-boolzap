@@ -31,9 +31,30 @@ $(document).on('click','ul.flex_list li', function() {
         $(this).addClass('none');
       }
   });
-})
+});
+
+
 
 });
+
+$(document).on('click', 'ul.flex_list li', function() {
+  var data = $(this).attr('data');
+  var selector = '.container_text_right[data="' + data + '"]';
+  console.log(selector);
+  $('.container_text_right').removeClass('active');
+  $(selector).addClass('active');
+  $('.ul.flex_list li').removeClass('active');
+  $(this).addClass('active');
+
+  var name = $(this).find('.name_chat h4').text();
+  var time = $(this).find('.name_chat small').text();
+  var img = $(this).find('.img_chat img').attr('src');
+  $('.container_text_right .name_chat h4').text(name);
+  $('.container_text_right .text_chat small').text('Ultimo accesso alle ' + time);
+  $('.container_text_right .img_chat img').attr('src', img);
+});
+
+// ++++++++++++++++++++++++++++++++++++
 
 // Dentro una variabile prendo il valore dentro l'input con classe send mettiamo la condizione per non mandare messaggi a vuoto (la lunghezzo di text deve essere diversa da zero)
 
