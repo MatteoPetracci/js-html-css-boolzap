@@ -124,6 +124,7 @@ img {
   display: flex;
   height: 80px;
   background-color: #9de1fe;
+  width: 100%;
 }
 
 .notification:hover {
@@ -219,7 +220,7 @@ img {
 
 .container_chat {
   overflow-y: scroll;
-  height: 100%;
+  height: calc(100% - 190px);
 }
 
 .text_chat p {
