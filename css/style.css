@@ -408,10 +408,20 @@ header {
   align-items: center;
 }
 
+.box_emoji_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .box_emoji i {
   font-size: 1.5em;
 }
 
+.box_emoji_1 i {
+  font-size: 1.5em;
+}
+.box_emoji_1,
 .box_emoji,
 .box_send {
   width: 8%;

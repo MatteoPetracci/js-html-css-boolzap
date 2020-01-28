@@ -87,6 +87,8 @@ function textSend() {
     console.log(minute);
     textHidden.find('.time').text(hour + ':' + minute);
 
+
+
 // con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
 
     setTimeout(function () {
@@ -139,3 +141,11 @@ $('.flex_list li').each(function() {
 
 });
 });
+
+// Funzioneper cambiare icona
+
+$('.send').focus(function(){
+   $('.box_emoji_1 i').removeClass('fa fa-microphone').addClass('fas fa-paper-plane');
+ }).blur(function(){
+   $('.box_emoji_1 i').removeClass('fas fa-paper-plane').addClass('fa fa-microphone');
+ });
