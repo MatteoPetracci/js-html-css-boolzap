@@ -84,19 +84,25 @@ function textSend() {
 
 // con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
 
-    setTimeout(function () {
-      var received = $('.template .box_text').clone();
-      received.addClass('receive');
-      received.find('.text').text("Va bene, grazie.");
-      $('.main').append(received);
-      var date = new Date();
-      console.log(date);
-      var hour = date.getHours();
-      console.log(hour);
-      var minute = zero(date.getMinutes());
-      console.log(minute);
-      received.find('.time').text(hour + ':' + minute);
-    }, 1500);
+setTimeout(function() {
+  $('.flex_item_header_left small').text('Sta scrivendo...');
+  // console.log($('.flex_item_header_left small').text());
+  setTimeout(function () {
+    var received = $('.template .box_text').clone();
+    received.addClass('receive');
+    received.find('.text').text("Va bene, grazie.");
+    $('.main').append(received);
+    var date = new Date();
+    // console.log(date);
+    var hour = date.getHours();
+    // console.log(hour);
+    var minute = zero(date.getMinutes());
+    // console.log(minute);
+    received.find('.time').text(hour + ':' + minute);
+  }, 1500);
+
+  clearTimeout(setTimeout());
+}, 900)
 // Come secondo argomento passo il tempo che deve passare in questo caso 1.5s
   }
 }
