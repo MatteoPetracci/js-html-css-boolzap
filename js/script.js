@@ -94,6 +94,13 @@ function textSend() {
       received.addClass('receive');
       received.find('.text').text("Va bene, grazie.");
       $('.main').append(received);
+      var date = new Date();
+      console.log(date);
+      var hour = date.getHours();
+      console.log(hour);
+      var minute = zero(date.getMinutes());
+      console.log(minute);
+      received.find('.time').text(hour + ':' + minute);
     }, 1500);
 // Come secondo argomento passo il tempo che deve passare in questo caso 1.5s
   }
