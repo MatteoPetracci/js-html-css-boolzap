@@ -2,10 +2,9 @@
 
 $(document).ready(function (){
 
-$('.fa-paper-plane').click(function() {
+$('.fa-microphone').click(function() {
   textSend();
 });
-
 
 $('.send').keyup(function () {
   if (event.which == 13) {
@@ -21,7 +20,6 @@ $(document).on('click', '.delete', function() {
   $(this).parents('.box_text').remove();
 });
 
-
 $(document).on('click','ul.flex_list li', function() {
   var data = $(this).attr('data');
   $('.wrapper_text').removeClass('block');
@@ -32,9 +30,6 @@ $(document).on('click','ul.flex_list li', function() {
       }
   });
 });
-
-
-
 });
 
 $(document).on('click', 'ul.flex_list li', function() {
@@ -87,8 +82,6 @@ function textSend() {
     console.log(minute);
     textHidden.find('.time').text(hour + ':' + minute);
 
-
-
 // con setTimeout come primo argomento passo la funzione che clona il mio box_text aggiungo la classe receive in modo che vada a sinistra tra i messaggi ricevuti e come fatto per i messaggi inviati prendo la classe text e modifico il valore del tag contenuto in p poi con append lo stampo nel main
 
     setTimeout(function () {
@@ -138,7 +131,6 @@ $('.flex_list li').each(function() {
   } else {
     $(this).hide();
   }
-
 });
 });
 

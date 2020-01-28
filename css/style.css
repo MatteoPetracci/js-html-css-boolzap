@@ -311,11 +311,11 @@ header {
 }
 
 .flex_item_header_left {
-  width: 30%;
+  width: 35%;
   background-color: #ededed;
 }
 .flex_item_header_rigth {
-  width: 70%;
+  width: 65%;
   background-color: #ededed;
   line-height: 60px;
 }
